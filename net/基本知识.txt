@@ -1,0 +1,51 @@
+浏览器原理：
+1.自定义服务端,使用已有的客户端IE，了解一下客户端给服务端发了什么请求?
+
+	发送的请求是：
+
+		GET / HTTP/1.1				请求行.遵从了http协议。
+									请求方式：/myweb/1.heml 请求的资源路径 http协议版本
+		请求消息头 	属性名：属性值
+		Accept: text/html, application/xhtml+xml, image/jxr, */*
+		Accept-Language: zh-CN
+		User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+		Accept-Encoding: gzip, deflate     //支持的压缩方式
+		Host: 10.170.15.108:16444
+		Connection: Keep-Alive
+		
+		
+		
+网络结构：
+1.C/S clent/server
+	特点：
+		该结构的软件客户端和服务端都需要编写	
+		开发成本较高，维护较为麻烦
+		
+	好处：
+		客户端在本地可以分担一部分运算。
+		
+		
+		
+2.B/S browser/server
+	特点：
+		该结构的软件，只开发服务器端，不开发客户端，因为客户直接由浏览器取代	
+		开发成本相对较低，维护更简单。
+		
+	缺点：
+		所有运算都在服务器端完成。
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
